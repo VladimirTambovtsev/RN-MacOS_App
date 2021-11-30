@@ -7,7 +7,7 @@ import {AppRegistry} from 'react-native';
 import App from './App';
 import {name as appName} from './app.json';
 import {StoreProvider, root} from './src/store/store';
-import {Books} from './src/store/components/Books';
+import {Books} from './src/components/Books';
 
 const Root = () => (
   <StoreProvider value={root}>

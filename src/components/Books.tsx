@@ -4,6 +4,7 @@ import {View, Text, TextInput, TouchableOpacity} from 'react-native';
 import {useStore} from '../store/store';
 import {tw} from '../Tailwind';
 import {useDynamicColor} from '../hooks/theme';
+import {Button} from './button/Button';
 
 export const Books = observer(() => {
   let root = useStore();
@@ -25,13 +26,14 @@ export const Books = observer(() => {
         style={tw('rounded p-2 mt-5')}
         placeholder="Post Title"
       />
-      <TouchableOpacity
+      <Button title="Add Post" type="primary" />
+      {/* <TouchableOpacity
         onPress={() => root.ui.addBook('Test')}
         style={tw(
           `${buttonColor} items-center text-white justify-center p-3 rounded mt-2`,
         )}>
         <Text>Add Post</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   );
 });

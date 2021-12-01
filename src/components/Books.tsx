@@ -1,17 +1,13 @@
 import React, {useState} from 'react';
 import {observer} from 'mobx-react-lite';
-import {View, Text, TextInput, TouchableOpacity} from 'react-native';
+import {View, Text, TextInput} from 'react-native';
 import {useStore} from '../store/store';
 import {tw} from '../Tailwind';
-import {useDynamicColor} from '../hooks/theme';
 import {Button} from './button/Button';
 
 export const Books = observer(() => {
   let root = useStore();
   const [title, setTitle] = useState('');
-  const dc = useDynamicColor();
-
-  const buttonColor = dc('bg-tangerine', 'bg-cyan');
 
   return (
     <View style={tw('p-3')}>

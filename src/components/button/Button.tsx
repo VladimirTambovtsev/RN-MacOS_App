@@ -8,6 +8,7 @@ import {
   TouchableOpacityProps,
 } from 'react-native';
 import {tw} from '../../Tailwind';
+import {useDynamicColor} from '../../hooks/theme';
 
 interface Props extends TouchableOpacityProps {
   title: string;
@@ -16,6 +17,14 @@ interface Props extends TouchableOpacityProps {
 }
 
 export const Button: FC<Props> = ({title, style, type, ...props}) => {
+  const dc = useDynamicColor();
+  const buttonBgColorPrimary = dc('bg-cyan', 'bg-tangerine');
+  const buttonBgColorSecondary = dc('bg-blue-500', 'bg-green-500');
+  const styles = {
+    primary: `${buttonBgColorPrimary} bg-cyan p-2 w-24 items-center rounded`,
+    secondary: `${buttonBgColorSecondary} bg-blue-500 p-2 w-24 items-center rounded`,
+  };
+
   return (
     <TouchableOpacity {...props}>
       <View style={[tw(styles[type]), style]}>
@@ -23,9 +32,4 @@ export const Button: FC<Props> = ({title, style, type, ...props}) => {
       </View>
     </TouchableOpacity>
   );
-};
-
-const styles = {
-  primary: 'bg-cyan p-3 w-24 items-center',
-  secondary: 'bg-blue-500 p-3 w-24 items-center',
 };

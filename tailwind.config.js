@@ -1,13 +1,11 @@
 module.exports = {
   purge: [],
-  darkMode: false,
+  // darkMode: false,
   theme: {
     extend: {
-      cyan: {
-        DEFAULT: '#04bf9b',
-      },
-      tangerine: {
-        DEFAULT: '#fc9010',
+      colors: {
+        cyan: '#04bf9b',
+        tangerine: '#fc9010',
       },
     },
   },
@@ -20,9 +18,9 @@ module.exports = {
 // module.exports = {
 //   purge: [],
 //   darkMode: false, // or 'media' or 'class'
-//   theme: {
-//     extend: {},
-//   },
+// theme: {
+//   extend: {},
+// },
 //   variants: {
 //     extend: {},
 //   },

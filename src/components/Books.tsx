@@ -2,11 +2,16 @@ import React, {useState} from 'react';
 import {observer} from 'mobx-react-lite';
 import {View, Text, TextInput, TouchableOpacity} from 'react-native';
 import {useStore} from '../store/store';
-import tw from 'tailwind-rn';
+import {tw} from '../Tailwind';
+import {useDynamicColor} from '../hooks/theme';
 
 export const Books = observer(() => {
   let root = useStore();
   const [title, setTitle] = useState('');
+  const dc = useDynamicColor();
+
+  const buttonColor = dc('bg-tangerine', 'bg-cyan');
+
   return (
     <View style={tw('p-3')}>
       {root.ui.upperCasedPosts.map(post => (
@@ -23,7 +28,7 @@ export const Books = observer(() => {
       <TouchableOpacity
         onPress={() => root.ui.addBook('Test')}
         style={tw(
-          'items-center bg-blue-500 text-white justify-center p-3 rounded mt-2',
+          `${buttonColor} items-center text-white justify-center p-3 rounded mt-2`,
         )}>
         <Text>Add Post</Text>
       </TouchableOpacity>

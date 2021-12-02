@@ -1,24 +1,33 @@
 import React, {useState} from 'react';
 import {observer} from 'mobx-react-lite';
-import {View, Text, TextInput} from 'react-native';
+import {View, Text, TextInput, TouchableOpacity} from 'react-native';
 import {useStore} from '../store/store';
 import {tw} from '../Tailwind';
 import {Button} from './button/Button';
+import {useNavigation} from '@react-navigation/native';
+import {useDynamicColor} from '../hooks/theme';
 
-export const Books = observer(() => {
-  let root = useStore();
+export const Posts = observer(() => {
+  const navigation: any = useNavigation();
+  const root = useStore();
   const [title, setTitle] = useState('');
+  const dc = useDynamicColor();
+  const backgroundColor = dc('bg-gray-900	', 'bg-white');
 
   return (
-    <View style={tw('p-3')}>
+    <View style={tw(`${backgroundColor} p-3 h-full`)}>
       {root.ui.upperCasedPosts.map(post => (
-        <View key={post.title}>
-          <Text style={tw('text-sm')}>{post.title}</Text>
-        </View>
+        <TouchableOpacity
+          key={post.title}
+          onPress={() => navigation.navigate('Post', {title: post.title})}>
+          <View>
+            <Text style={tw('text-sm')}>{post.title}</Text>
+          </View>
+        </TouchableOpacity>
       ))}
       <TextInput
         value={title}
-        onChange={() => setTitle}
+        onChange={() => setTitle('')}
         style={tw('rounded p-2 mt-5')}
         placeholder="Post Title"
       />

@@ -1,7 +1,7 @@
 import {makeAutoObservable} from 'mobx';
 import {IRootStore} from '../store';
 
-interface Post {
+export interface Post {
   title: string;
   createdAt: string;
 }

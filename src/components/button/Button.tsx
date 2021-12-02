@@ -21,8 +21,8 @@ export const Button: FC<Props> = ({title, style, type, ...props}) => {
   const buttonBgColorPrimary = dc('bg-cyan', 'bg-tangerine');
   const buttonBgColorSecondary = dc('bg-blue-500', 'bg-green-500');
   const styles = {
-    primary: `${buttonBgColorPrimary} bg-cyan p-2 w-24 items-center rounded`,
-    secondary: `${buttonBgColorSecondary} bg-blue-500 p-2 w-24 items-center rounded`,
+    primary: `${buttonBgColorPrimary} p-2 w-24 items-center rounded`,
+    secondary: `${buttonBgColorSecondary} p-2 w-24 items-center rounded`,
   };
 
   return (

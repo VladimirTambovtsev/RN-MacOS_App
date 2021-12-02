@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import {Text, View} from 'react-native';
+import WebView from 'react-native-webview';
 import {IRootStackParams} from '../Routes';
 import {RouteProp} from '@react-navigation/native';
 import {tw} from '../Tailwind';
@@ -15,7 +16,8 @@ export const Post: FC<Props> = ({route}) => {
   const backgroundColor = dc('bg-gray-900	', 'bg-white');
   return (
     <View style={tw(`${backgroundColor} flex-1 p-5`)}>
-      <Text>{title}</Text>
+      <Text style={tw('mb-3')}>{title}</Text>
+      <WebView source={{uri: `https://google.com/search?q=${title}`}} />
     </View>
   );
 };

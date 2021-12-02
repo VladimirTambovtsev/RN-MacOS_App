@@ -12,6 +12,8 @@ target 'mac_os_rn_apps' do
     :hermes_enabled => false
   )
 
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
   target 'mac_os_rn_appsTests' do
     inherit! :complete
     # Pods for testing

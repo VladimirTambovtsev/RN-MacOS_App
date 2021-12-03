@@ -15,6 +15,7 @@ target 'mac_os_rn_apps-macOS' do
   )
 
   # Pods specifically for macOS target
+  pod "KeychainAccess"
 end
 
 target 'mac_os_rn_apps-iOS' do

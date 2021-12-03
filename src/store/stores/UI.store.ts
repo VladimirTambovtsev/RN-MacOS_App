@@ -1,4 +1,5 @@
-import {makeAutoObservable} from 'mobx';
+import {buildingAppsNative} from './../../native/MacOSRnAppsNative';
+import {makeAutoObservable, toJS, runInAction, autorun} from 'mobx';
 import {IRootStore} from '../store';
 
 export interface Post {
@@ -7,6 +8,25 @@ export interface Post {
 }
 
 export let createUIStore = (root: IRootStore) => {
+  const persist = async () => {
+    const plainState = toJS(store);
+    await buildingAppsNative.keychainWrite('state', JSON.stringify(plainState));
+  };
+
+  let hydrate = async () => {
+    let stringState = await buildingAppsNative.keychainRead('state');
+
+    if (stringState) {
+      let parsedStore = JSON.parse(stringState);
+
+      runInAction(() => {
+        store.books = parsedStore.books.map((book: any) => ({
+          title: book.title,
+          date: new Date(book.date),
+        }));
+      });
+    }
+  };
   let store = makeAutoObservable({
     posts: [
       {
@@ -32,5 +52,10 @@ export let createUIStore = (root: IRootStore) => {
       store.posts.push({title, createdAt: new Date().toISOString()});
     },
   });
+
+  hydrate().then(() => {
+    autorun(persist);
+  });
+
   return store;
 };

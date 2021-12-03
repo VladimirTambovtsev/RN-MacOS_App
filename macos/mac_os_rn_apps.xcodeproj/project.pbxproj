@@ -11,14 +11,12 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		5142014D2437B4B30078DB4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5142014C2437B4B30078DB4F /* AppDelegate.m */; };
-		514201502437B4B30078DB4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5142014F2437B4B30078DB4F /* ViewController.m */; };
 		514201522437B4B40078DB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514201512437B4B40078DB4F /* Assets.xcassets */; };
 		514201552437B4B40078DB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514201532437B4B40078DB4F /* Main.storyboard */; };
-		514201582437B4B40078DB4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 514201572437B4B40078DB4F /* main.m */; };
 		9C88AFA0FCECA074E0309681 /* libPods-mac_os_rn_apps-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1A37C22D4ABC908804045E /* libPods-mac_os_rn_apps-iOS.a */; };
 		B074B0930127F74B1D59C7F4 /* libPods-mac_os_rn_apps-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B098B07435327B1CFB1221 /* libPods-mac_os_rn_apps-macOS.a */; };
 		E7F8C67B275A158000809BAD /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = E7F8C67A275A158000809BAD /* Fonts */; };
+		E7F8C67E275A40CD00809BAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8C67D275A40CD00809BAD /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,14 +35,9 @@
 		3240B20150A9DB402C463D39 /* Pods-mac_os_rn_apps-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mac_os_rn_apps-macOS.release.xcconfig"; path = "Target Support Files/Pods-mac_os_rn_apps-macOS/Pods-mac_os_rn_apps-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		38423A3E24576CBC00BC2EAC /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		514201492437B4B30078DB4F /* mac_os_rn_apps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mac_os_rn_apps.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5142014B2437B4B30078DB4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5142014C2437B4B30078DB4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5142014E2437B4B30078DB4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5142014F2437B4B30078DB4F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		514201512437B4B40078DB4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		514201542437B4B40078DB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		514201562437B4B40078DB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		514201572437B4B40078DB4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		514201592437B4B40078DB4F /* mac_os_rn_apps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mac_os_rn_apps.entitlements; sourceTree = "<group>"; };
 		9D32DFD059D5DB6DDEF38881 /* Pods-Shared-mac_os_rn_apps-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-mac_os_rn_apps-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Shared-mac_os_rn_apps-iOS/Pods-Shared-mac_os_rn_apps-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A82DFB63B157C65E5D698CA2 /* Pods-Shared-mac_os_rn_apps-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-mac_os_rn_apps-iOS.release.xcconfig"; path = "Target Support Files/Pods-Shared-mac_os_rn_apps-iOS/Pods-Shared-mac_os_rn_apps-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -52,6 +45,8 @@
 		B3B098B07435327B1CFB1221 /* libPods-mac_os_rn_apps-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mac_os_rn_apps-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0E74F571E1F48FF00A8324 /* Pods-Shared-mac_os_rn_apps-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-mac_os_rn_apps-macOS.release.xcconfig"; path = "Target Support Files/Pods-Shared-mac_os_rn_apps-macOS/Pods-Shared-mac_os_rn_apps-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		E7F8C67A275A158000809BAD /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		E7F8C67C275A40CC00809BAD /* mac_os_rn_apps-macOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mac_os_rn_apps-macOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		E7F8C67D275A40CD00809BAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -121,15 +116,12 @@
 			children = (
 				E7F8C67A275A158000809BAD /* Fonts */,
 				38423A3E24576CBC00BC2EAC /* main.jsbundle */,
-				5142014B2437B4B30078DB4F /* AppDelegate.h */,
-				5142014C2437B4B30078DB4F /* AppDelegate.m */,
-				5142014E2437B4B30078DB4F /* ViewController.h */,
-				5142014F2437B4B30078DB4F /* ViewController.m */,
 				514201512437B4B40078DB4F /* Assets.xcassets */,
 				514201532437B4B40078DB4F /* Main.storyboard */,
 				514201562437B4B40078DB4F /* Info.plist */,
-				514201572437B4B40078DB4F /* main.m */,
 				514201592437B4B40078DB4F /* mac_os_rn_apps.entitlements */,
+				E7F8C67D275A40CD00809BAD /* AppDelegate.swift */,
+				E7F8C67C275A40CC00809BAD /* mac_os_rn_apps-macOS-Bridging-Header.h */,
 			);
 			path = "mac_os_rn_apps-macOS";
 			sourceTree = "<group>";
@@ -224,6 +216,7 @@
 					};
 					514201482437B4B30078DB4F = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1250;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -485,9 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				514201502437B4B30078DB4F /* ViewController.m in Sources */,
-				514201582437B4B40078DB4F /* main.m in Sources */,
-				5142014D2437B4B30078DB4F /* AppDelegate.m in Sources */,
+				E7F8C67E275A40CD00809BAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA9B8983AE8C1FC3366D1CE7 /* Pods-mac_os_rn_apps-iOS.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -540,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 161AD90D17F672FBF922D0BD /* Pods-mac_os_rn_apps-iOS.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -562,8 +555,9 @@
 			baseConfigurationReference = 1AA730C0DCA2315460ED971B /* Pods-mac_os_rn_apps-macOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = NO;
+				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = "mac_os_rn_apps-macos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
@@ -572,9 +566,13 @@
 					"-ObjC",
 					"-lc++",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/React/React-Core-macOS.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/yoga/Yoga-macOS.modulemap\" -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = mac_os_rn_apps;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "mac_os_rn_apps-macOS/mac_os_rn_apps-macOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -583,7 +581,9 @@
 			baseConfigurationReference = 3240B20150A9DB402C463D39 /* Pods-mac_os_rn_apps-macOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = "mac_os_rn_apps-macos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
@@ -592,9 +592,12 @@
 					"-ObjC",
 					"-lc++",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/React/React-Core-macOS.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/yoga/Yoga-macOS.modulemap\" -DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = mac_os_rn_apps;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "mac_os_rn_apps-macOS/mac_os_rn_apps-macOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

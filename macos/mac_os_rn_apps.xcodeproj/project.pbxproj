@@ -18,6 +18,7 @@
 		514201582437B4B40078DB4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 514201572437B4B40078DB4F /* main.m */; };
 		9C88AFA0FCECA074E0309681 /* libPods-mac_os_rn_apps-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1A37C22D4ABC908804045E /* libPods-mac_os_rn_apps-iOS.a */; };
 		B074B0930127F74B1D59C7F4 /* libPods-mac_os_rn_apps-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B098B07435327B1CFB1221 /* libPods-mac_os_rn_apps-macOS.a */; };
+		E7F8C67B275A158000809BAD /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = E7F8C67A275A158000809BAD /* Fonts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		AA9B8983AE8C1FC3366D1CE7 /* Pods-mac_os_rn_apps-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mac_os_rn_apps-iOS.debug.xcconfig"; path = "Target Support Files/Pods-mac_os_rn_apps-iOS/Pods-mac_os_rn_apps-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B3B098B07435327B1CFB1221 /* libPods-mac_os_rn_apps-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mac_os_rn_apps-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0E74F571E1F48FF00A8324 /* Pods-Shared-mac_os_rn_apps-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-mac_os_rn_apps-macOS.release.xcconfig"; path = "Target Support Files/Pods-Shared-mac_os_rn_apps-macOS/Pods-Shared-mac_os_rn_apps-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		E7F8C67A275A158000809BAD /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 		5142014A2437B4B30078DB4F /* mac_os_rn_apps-macOS */ = {
 			isa = PBXGroup;
 			children = (
+				E7F8C67A275A158000809BAD /* Fonts */,
 				38423A3E24576CBC00BC2EAC /* main.jsbundle */,
 				5142014B2437B4B30078DB4F /* AppDelegate.h */,
 				5142014C2437B4B30078DB4F /* AppDelegate.m */,
@@ -258,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7F8C67B275A158000809BAD /* Fonts in Resources */,
 				514201522437B4B40078DB4F /* Assets.xcassets in Resources */,
 				514201552437B4B40078DB4F /* Main.storyboard in Resources */,
 			);

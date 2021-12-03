@@ -28,7 +28,9 @@ export const Button: FC<Props> = ({title, style, type, ...props}) => {
   return (
     <TouchableOpacity {...props}>
       <View style={[tw(styles[type]), style]}>
-        <Text style={tw('text-white')}>{title}</Text>
+        <Text style={(tw('text-white'), {fontFamily: 'Montserrat-SemiBold'})}>
+          {title}
+        </Text>
       </View>
     </TouchableOpacity>
   );

@@ -14,6 +14,7 @@ import {Button} from './button/Button';
 import {useNavigation} from '@react-navigation/native';
 import {useDynamicColor} from '../hooks/theme';
 import {Post} from '../store/stores/UI.store';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export const Posts = observer(() => {
   const navigation: any = useNavigation();
@@ -26,8 +27,11 @@ export const Posts = observer(() => {
     <TouchableOpacity
       key={item.title}
       onPress={() => navigation.navigate('Post', {title: item.title})}>
-      <View>
-        <Text style={tw('text-sm')}>{item.title}</Text>
+      <View style={tw('py-1 flex-row')}>
+        <Icon name="note" style={tw('mr-2 text-base	')} />
+        <Text style={(tw('text-base'), {fontFamily: 'Montserrat-Regular'})}>
+          {item.title}
+        </Text>
       </View>
     </TouchableOpacity>
   );
@@ -39,15 +43,7 @@ export const Posts = observer(() => {
         keyExtractor={post => post.title}
         style={tw('flex-1')}
       />
-      {/* {root.ui.upperCasedPosts.map(post => (
-        <TouchableOpacity
-          key={post.title}
-          onPress={() => navigation.navigate('Post', {title: post.title})}>
-          <View>
-            <Text style={tw('text-sm')}>{post.title}</Text>
-          </View>
-        </TouchableOpacity>
-      ))} */}
+
       <TextInput
         value={title}
         onChange={() => setTitle('')}

@@ -75,4 +75,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
           }
       }
   }
+  
+  func closeApp() {
+    NSApp.terminate(nil)
+  }
 }

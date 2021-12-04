@@ -15,6 +15,7 @@ import {useNavigation} from '@react-navigation/native';
 import {useDynamicColor} from '../hooks/theme';
 import {Post} from '../store/stores/UI.store';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {buildingAppsNative} from '../native/MacOSRnAppsNative';
 
 export const Posts = observer(() => {
   const navigation: any = useNavigation();
@@ -51,6 +52,11 @@ export const Posts = observer(() => {
         placeholder="Post Title"
       />
       <Button title="Add Post" type="primary" />
+      <Button
+        title="Quit"
+        type="secondary"
+        onPress={() => buildingAppsNative.closeApp()}
+      />
       {/* <TouchableOpacity
         onPress={() => root.ui.addBook('Test')}
         style={tw(

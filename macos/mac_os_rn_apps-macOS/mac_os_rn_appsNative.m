@@ -13,4 +13,6 @@ RCT_EXTERN_METHOD(keychainWrite: (NSString)key payload:(NSString) payload resolv
 
 RCT_EXTERN_METHOD(keychainRead: (NSString)key resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 
+RCT_EXTERN_METHOD(closeApp)
+
 @end
